@@ -1,7 +1,7 @@
 <h1 align="center">Hey <img src="https://cdn.7tv.app/emote/01FPQXMF6R0008ZYPTDH5TZB78/1x.webp">, I'm Oney</h1>
 <h3 align="center">from Slovakia 🇸🇰</h3>
 
-- 🔭 I’m currently working on <a href="https://fkht.cz" target="blank"><img align="center" src="fkht.png" height="30" width="50"/></a>
+- 🔭 I’m currently working on <a href="https://fkht.cz" target="blank"><img align="center" src="fkht.png" height="30" width="55"/></a>
 - 👯 I’m working on my CS2 server - <img align="center" src="chronohub.png" height="40" width="40"/></a>
 - 🙌 Also helping with a CS2 server - <a href="https://csko.net" target="blank"><img align="center" src="playpoint.png" height="40" width="40"/></a>
 
