@@ -1,9 +1,10 @@
 <h1 align="center">Hey <img src="https://cdn.7tv.app/emote/01FPQXMF6R0008ZYPTDH5TZB78/1x.webp">, I'm Oney</h1>
 <h3 align="center">from Slovakia 🇸🇰</h3>
 
-- 🔭 I’m currently working on <a href="https://fkht.cz"><img src="https://cdn.discordapp.com/attachments/925865159216496703/1287145300754038878/wide_fkht.png?ex=671b53b9&is=671a0239&hm=7edc2dfd1524374f4d20491713c477e07c30eb39b01614a004bb92b9c1412bba&" height="40" width="40"></a>
+- 🔭 I’m currently working on FKHT.cz
 
-- 👯 Also i’m working on my CS2 server - **Chrono-Hub**
+- 👯 I’m working on my CS2 server - **Chrono-Hub**
+- 🙌 Also helping with a CS2 server - **CSKO.NET**
 
 <h3 align="left">My social:</h3>
 <p align="left">
