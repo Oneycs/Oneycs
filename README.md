@@ -3,8 +3,8 @@
 
 - 🔭 I’m currently working on FKHT.cz
 
-- 👯 I’m working on my CS2 server - **Chrono-Hub**
-- 🙌 Also helping with a CS2 server - <a href="https://csko.net" target="blank"><img align="center" src="playpoint.png" alt="oneycs" height="40" width="40" /></a>
+- 👯 I’m working on my CS2 server - <img align="center" src="chronohub.png" height="40" width="40" /></a>
+- 🙌 Also helping with a CS2 server - <a href="https://csko.net" target="blank"><img align="center" src="playpoint.png" height="40" width="40" /></a>
 
 <h3 align="left">My social:</h3>
 <p align="left">
