@@ -9,5 +9,5 @@
 <p align="left">
 <a href="https://instagram.com/oneycs" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="oneycs" height="30" width="40" /></a> 
 <a href="https://discord.com/users/900028264163201084" target="blank"><img align="center" src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/636e0a6a49cf127bf92de1e2_icon_clyde_blurple_RGB.png" alt="oneycs" height="30" width="40" /></a>
-<a href="https://steamcommunity.com/id/oneyxacek" target="blank"><img align="center" src="https://w7.pngwing.com/pngs/960/110/png-transparent-steam-video-game-computer-icons-counter-strike-source-logo-audience-heroes-logo-video-game-thumbnail.png" alt="oneycs" height="30" width="40" /></a>
+<a href="https://steamcommunity.com/id/oneyxacek" target="blank"><img align="center" src="https://static.vecteezy.com/system/resources/previews/020/975/553/non_2x/steam-logo-steam-icon-transparent-free-png.png" alt="oneycs" height="30" width="40" /></a>
 </p>
