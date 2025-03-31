@@ -7,5 +7,5 @@
 
 <h3 align="left">My social:</h3>
 <p align="left">
-<a href="https://oneyxacek.eu/linktree" target="blank"><img align="center" src="linktree.svg" alt="linktree" height="40" width="40" /></a> 
+<a href="https://oneyxacek.eu/linktree" target="blank"><img align="center" src="linktree_new.svg" alt="linktree" height="40" width="40" /></a> 
 </p>
