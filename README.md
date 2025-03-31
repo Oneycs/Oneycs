@@ -3,7 +3,7 @@
 
 - 🔭 I’m currently working on - <a href="https://fkht.cz" target="blank"><img align="center" src="fkht_new.png" height="40" width="40"/></a>
 - 🙌 Also helping with a CS2 server - <a href="https://csko.net" target="blank"><img align="center" src="playpoint.png" height="40" width="40"/></a>
-- 👯 ~I’m working on my CS2 server~  - <img align="center" src="chronohub.png" height="40" width="40"/></a> ### * Currently not working on it.
+- 👯 ~I’m working on my CS2 server~  - <img align="center" src="chronohub.png" height="40" width="40"/>### * Currently not working on it.</a>
 
 <h3 align="left">My social:</h3>
 <p align="left">
