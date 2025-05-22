@@ -5,7 +5,8 @@
   <img src="/github-metrics.svg" alt="Metrics">
 </picture>
 
-<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=Oneycs&show_icons=true&locale=en&layout=compact&theme=transparent" alt="Oneycs" /></p>
+<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=Oneycs&show_icons=true&locale=en&layout=compact&theme=transparent" alt="Oneycs" />
+</p>
 
 
 
