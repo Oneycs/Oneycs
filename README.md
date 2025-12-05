@@ -8,9 +8,12 @@
 
 #### - 🔭 I’m currently working on - <a href="https://fkht.cz" target="blank"><img align="center" src="fkht_new.png" height="40" width="40"/></a>
 #### - 🙌 Also helping with a CS2 server - <a href="https://csko.net" target="blank"><img align="center" src="playpoint.png" height="40" width="40"/></a>
-#### - 👯 ~I’m working on my CS2 server~ - <img align="center" src="chronohub.png" height="40" width="40"/> __* Currently not working on it.__</a>
 
 #### - 🌐 Linktree - <a href="https://oneyxacek.eu/linktree" target="blank"><img align="center" src="linktree_new.svg" alt="linktree" height="40" width="40"/></a> 
 
 <p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=Oneycs&show_icons=true&locale=en&layout=compact&theme=transparent" alt="Oneycs" />
 </p>
+
+<picture>
+  <img src="tree.svg" alt="Daily Christmas Tree">
+</picture>
