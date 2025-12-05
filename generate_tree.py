@@ -4,7 +4,7 @@ import random
 
 OUTPUT = Path("tree.svg")
 
-# Colors for leaves
+# Colors for the stars
 COLORS = [
     "#2ecc71",  # green
     "#e74c3c",  # red
@@ -14,10 +14,8 @@ COLORS = [
     "#1abc9c",  # teal
 ]
 
-# Characters for tree decoration
-CHARS = ["*", "+", "o", "x", "▲", "◆", "●"]
 
-def days_until_christmas():
+def days_until_christmas() -> int:
     today = datetime.date.today()
     year = today.year
     christmas = datetime.date(year, 12, 25)
@@ -26,64 +24,72 @@ def days_until_christmas():
     if today > christmas:
         christmas = datetime.date(year + 1, 12, 25)
 
-    delta = (christmas - today).days
-    return delta
+    return (christmas - today).days
 
 
-def generate_colored_ascii():
+def build_svg() -> str:
     today = datetime.date.today()
     seed = today.timetuple().tm_yday
     random.seed(seed)
 
-    height = 14
-    lines = []
+    days_left = days_until_christmas()
+    today_str = today.isoformat()
 
-    for i in range(height):
-        spaces = " " * (height - i - 1)
-        leaves = ""
-
-        # Assign random colored characters
-        for _ in range(2 * i + 1):
-            char = random.choice(CHARS)
-            color = random.choice(COLORS)
-            leaves += f'<tspan fill="{color}">{char}</tspan>'
-
-        lines.append(spaces + leaves)
-
-    # Tree trunk
-    trunk_color = "#8e5a2b"
-    trunk = " " * (height - 2) + "".join(
-        f'<tspan fill="{trunk_color}">█</tspan>' for _ in range(3)
-    )
-    lines.append(trunk)
-    lines.append(trunk)
-
-    return lines
-
-
-def build_svg():
-    lines = generate_colored_ascii()
-    today = datetime.date.today().isoformat()
-    countdown = days_until_christmas()
+    # Smaller tree settings
+    height = 9          # number of star rows (smaller than before)
+    line_height = 18
+    center_x = 200
+    y_start = 110
 
     svg = [
-        '<svg xmlns="http://www.w3.org/2000/svg" width="400" height="380">',
+        '<svg xmlns="http://www.w3.org/2000/svg" width="400" height="320">',
         '<rect width="100%" height="100%" fill="#0b1020"/>',
 
-        # Countdown text
-        '<text x="20" y="40" font-family="monospace" font-size="22" fill="#f1c40f">',
-        f"  {countdown} days until Christmas 🎄",
-        "</text>",
+        # Countdown text centered at top
+        (
+            f'<text x="{center_x}" y="40" '
+            'font-family="monospace" font-size="22" '
+            'fill="#f1c40f" text-anchor="middle">'
+            f'{days_left} days until Christmas 🎄'
+            '</text>'
+        ),
 
-        '<text x="20" y="70" font-family="monospace" font-size="18" fill="#ecf0f1">'
+        # Tree text block
+        '<text font-family="monospace" font-size="16" fill="#ecf0f1">'
     ]
 
-    y = 100
-    for line in lines:
-        svg.append(f'<tspan x="20" y="{y}">{line}</tspan>')
-        y += 20
+    y = y_start
 
-    svg.append(f'<tspan x="20" y="{y+20}" fill="#bdc3c7">Updated: {today}</tspan>')
+    # Tree rows – all stars, multicolored, centered
+    for i in range(height):
+        count = 2 * i + 1  # 1, 3, 5, ...
+        stars = []
+        for _ in range(count):
+            color = random.choice(COLORS)
+            stars.append(f'<tspan fill="{color}">*</tspan>')
+
+        row = "".join(stars)
+        svg.append(
+            f'<tspan x="{center_x}" y="{y}" text-anchor="middle">{row}</tspan>'
+        )
+        y += line_height
+
+    # Trunk – 3 brown blocks, centered
+    trunk_color = "#8e5a2b"
+    trunk_chars = "".join(
+        f'<tspan fill="{trunk_color}">█</tspan>' for _ in range(3)
+    )
+    svg.append(
+        f'<tspan x="{center_x}" y="{y}" text-anchor="middle">{trunk_chars}</tspan>'
+    )
+    y += line_height
+
+    # Updated date
+    svg.append(
+        f'<tspan x="{center_x}" y="{y + 10}" text-anchor="middle" '
+        f'fill="#bdc3c7">Updated: {today_str}</tspan>'
+    )
+
     svg.append("</text></svg>")
 
     return "\n".join(svg)
@@ -92,7 +98,7 @@ def build_svg():
 def main():
     svg = build_svg()
     OUTPUT.write_text(svg, encoding="utf-8")
-    print("Generated colorful tree.svg with countdown")
+    print("Generated centered, smaller star tree with countdown")
 
 
 if __name__ == "__main__":
